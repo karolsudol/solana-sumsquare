@@ -9,7 +9,7 @@ use solana_program::{
 };
 
 #[derive(BorshSerialize, BorshDeserialize, Debug)]
-pub struct SolanaSumSquareSum {
+pub struct MathStuffSum {
     pub sum: u32,
 }
 
@@ -42,7 +42,7 @@ fn process_instruction(
 
     msg!("Adding 1 to sum...");
 
-    let mut math_stuff = SolanaSumSquareSum::try_from_slice(&account.data.borrow())?;
+    let mut math_stuff = MathStuffSum::try_from_slice(&account.data.borrow())?;
     math_stuff.sum += 1;
     math_stuff.serialize(&mut &mut account.data.borrow_mut()[..])?;
 

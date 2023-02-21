@@ -8,7 +8,7 @@
 
 <br/>
 <p align="center">
-<img src="img/solana-accounts.jpg">
+<img src="img/a.png">
 </a>
 </p>
 <br/>
